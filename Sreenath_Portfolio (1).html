@@ -1,215 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sreenath P | Software Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        body {
-            background: #0f172a;
-            color: #f1f5f9;
-            scroll-behavior: smooth;
-        }
-
-        nav {
-            background: #1e293b;
-            padding: 15px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav h1 {
-            color: #38bdf8;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #f1f5f9;
-            transition: 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #38bdf8;
-        }
-
-        header {
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        header h2 {
-            font-size: 45px;
-            color: #38bdf8;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        header p {
-            margin-top: 15px;
-            font-size: 18px;
-            color: #cbd5e1;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #38bdf8;
-            color: black;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: white;
-        }
-
-        section {
-            padding: 60px 50px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        h3 {
-            color: #38bdf8;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #38bdf8;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        .skills-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .skill {
-            background: #1e293b;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .skill:hover {
-            background: #38bdf8;
-            color: black;
-            transform: scale(1.05);
-        }
-
-        .project-box {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-
-        .contact p {
-            margin: 10px 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1e293b;
-            margin-top: 40px;
-            color: #94a3b8;
-        }
-
-        @keyframes fadeIn {
-            from {opacity: 0;}
-            to {opacity: 1;}
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            header h2 {
-                font-size: 30px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sreenath P | IT Developer</title>
+<style>
+body{font-family:Arial;background:#0f172a;color:#f1f5f9;margin:0;padding:0;}
+header{background:#1e293b;padding:40px;text-align:center;}
+header img{width:150px;border-radius:50%;border:3px solid #38bdf8;}
+header h1{color:#38bdf8;margin-top:15px;}
+header p{margin:5px;font-size:18px;color:#cbd5e1;}
+section{padding:40px 20px;max-width:900px;margin:auto;}
+h2{color:#38bdf8; margin-bottom:10px;}
+.skills div, .contact p{padding:8px 0;}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;}
+footer{text-align:center;padding:15px;background:#1e293b;color:#94a3b8;margin-top:30px;}
+.btn{background:#38bdf8;color:black;padding:8px 12px;border:none;border-radius:5px;text-decoration:none;font-weight:bold;}
+</style>
 </head>
-
 <body>
 
-<nav>
-    <h1>Sreenath P</h1>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
 <header>
-    <h2>Software Developer</h2>
-    <p>Building efficient, scalable and modern applications.</p>
-    <a href="#" class="btn">Download Resume</a>
+<img src="profile.jpg" alt="Sreenath Profile">
+<h1>Sreenath P</h1>
+<p>Aspiring IT Developer</p>
+<a href="sree_resume_latest.pdf" class="btn" download>Download Resume</a>
+<a href="https://github.com/sreenath__portfolio" target="_blank" class="btn">GitHub</a>
 </header>
 
 <section id="about">
-    <h3>About Me</h3>
-    <p>
-        I am a passionate Software Developer with strong interest in designing
-        and developing high-quality applications. I enjoy solving real-world
-        problems through clean and efficient code. I continuously improve my
-        technical skills and adapt to new technologies to grow professionally.
-    </p>
+<h2>About Me</h2>
+<p>I am a motivated IT developer passionate about problem solving and building efficient software solutions. Currently focused on learning and improving skills in software & AI/ML technologies.</p>
 </section>
 
 <section id="skills">
-    <h3>Skills</h3>
-    <div class="skills-list">
-        <div class="skill">Java</div>
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">Basics of Python</div>
-    </div>
+<h2>Skills</h2>
+<div class="skills">
+<div>Java</div><div>HTML</div><div>CSS</div><div>Python (Basics)</div>
+</div>
 </section>
 
-<section id="projects">
-    <h3>Projects</h3>
-    <div class="project-box">
-        <p>Projects will be updated soon. Stay tuned!</p>
-    </div>
+<section id="contact">
+<h2>Contact</h2>
+<p>Phone: 7989591198</p>
+<p>Email: sreenathpokuri2019@gmail.com</p>
+<p>Location: Andhra Pradesh, India</p>
 </section>
 
-<section id="contact" class="contact">
-    <h3>Contact</h3>
-    <p>📞 7989591198</p>
-    <p>📧 sreenathpokuri2019@gmail.com</p>
-</section>
-
-<footer>
-    © 2026 Sreenath P | All Rights Reserved
-</footer>
+<footer>© 2026 Sreenath P | All Rights Reserved</footer>
 
 </body>
 </html>
