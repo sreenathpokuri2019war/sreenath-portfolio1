@@ -36,9 +36,23 @@ padding:60px 20px;
 }
 
 header img{
-width:170px;
-border-radius:50%;
-border:4px solid #38bdf8;
+  header img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 25px #38bdf8,
+               0 0 50px #0ea5e9;
+    transition:0.4s ease-in-out;
+}
+
+header img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 35px #38bdf8,
+               0 0 70px #0ea5e9;
+}
+
 }
 
 header h1{
