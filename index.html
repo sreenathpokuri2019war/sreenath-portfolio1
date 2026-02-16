@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muddala Jagadish | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+header{
+    background:#0f172a;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #1e293b;
+}
+
+header h1{
+    font-size:22px;
+    color:#38bdf8;
+}
+
+nav a{
+    color:#e2e8f0;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    padding:60px 10%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text p{
+    margin-bottom:20px;
+    line-height:1.6;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:600;
+}
+
+.hero-img{
+    flex:1;
+    text-align:center;
+    min-width:300px;
+}
+
+.hero-img img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #38bdf8;
+}
+
+section{
+    padding:60px 10%;
+}
+
+.section-title{
+    font-size:28px;
+    margin-bottom:30px;
+    text-align:center;
+    color:#38bdf8;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.skills span{
+    display:inline-block;
+    background:#334155;
+    padding:8px 15px;
+    border-radius:20px;
+    margin:5px;
+    font-size:14px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0f172a;
+    border-top:1px solid #1e293b;
+    font-size:14px;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Jagadish</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Hi, I'm <span>Muddala Jagadish</span></h2>
+        <p>Java & SQL Developer passionate about problem solving, learning new technologies, and building efficient solutions that create impact.</p>
+        <a href="Jagadish-Resume.pdf" class="btn">Download Resume</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="profile.jpg" alt="Jagadish Profile Photo">
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        Secure a responsible career opportunity where I can explore my knowledge to fully utilize my training and skills, while making a significant contribution to the success of the company.
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="card">
+        🎓 Degree – Sri Hari Degree College (Yogi Vemana University) – 2025
+    </div>
+    <div class="card">
+        📘 Intermediate – Board of Intermediate Education, A.P – 2018
+    </div>
+    <div class="card">
+        🏫 SSC – Board of Secondary Education, A.P – 2014
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <span>Java</span>
+        <span>SQL</span>
+        <span>MS Office</span>
+        <span>Problem Solving</span>
+        <span>Team Work</span>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+        📧 jagadishraj250@gmail.com <br><br>
+        📱 +91 7989595009 <br><br>
+        🌐 Languages: English | Telugu | Hindi
+    </div>
+</section>
+
+<footer>
+    © 2025 Muddala Jagadish | All Rights Reserved
+</footer>
+
+</body>
+</html>
