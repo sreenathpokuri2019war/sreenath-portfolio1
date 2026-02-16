@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>P. Sreenath | Professional Portfolio</title>
+<title>P. Sreenath | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -21,6 +21,7 @@ body{
 }
 
 header{
+    background:#0f172a;
     padding:20px 10%;
     display:flex;
     justify-content:space-between;
@@ -29,13 +30,13 @@ header{
 }
 
 header h1{
-    color:#38bdf8;
     font-size:22px;
+    color:#38bdf8;
 }
 
 nav a{
-    text-decoration:none;
     color:#e2e8f0;
+    text-decoration:none;
     margin-left:20px;
     font-size:14px;
 }
@@ -44,34 +45,31 @@ nav a:hover{
     color:#38bdf8;
 }
 
-section{
-    padding:60px 10%;
-}
-
-.section-title{
-    text-align:center;
-    color:#38bdf8;
-    margin-bottom:30px;
-    font-size:28px;
-}
-
 .hero{
-    text-align:center;
-    padding:80px 10%;
+    padding:60px 10%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
 }
 
-.hero h2{
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h2{
     font-size:40px;
     margin-bottom:15px;
 }
 
-.hero span{
+.hero-text span{
     color:#38bdf8;
 }
 
-.hero p{
-    max-width:700px;
-    margin:0 auto 25px;
+.hero-text p{
+    margin-bottom:20px;
+    line-height:1.6;
     color:#cbd5e1;
 }
 
@@ -83,6 +81,31 @@ section{
     text-decoration:none;
     border-radius:5px;
     font-weight:600;
+}
+
+.hero-img{
+    flex:1;
+    text-align:center;
+    min-width:300px;
+}
+
+.hero-img img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #38bdf8;
+}
+
+section{
+    padding:60px 10%;
+}
+
+.section-title{
+    font-size:28px;
+    margin-bottom:30px;
+    text-align:center;
+    color:#38bdf8;
 }
 
 .card{
@@ -104,9 +127,17 @@ section{
 footer{
     text-align:center;
     padding:20px;
+    background:#0f172a;
     border-top:1px solid #1e293b;
-    color:#94a3b8;
     font-size:14px;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
 }
 </style>
 </head>
@@ -125,9 +156,15 @@ footer{
 </header>
 
 <section class="hero">
-    <h2>Hello, I'm <span>P. Sreenath</span></h2>
-    <p>Motivated Web Developer and Back Office Executive with knowledge in Python, Java, HTML, CSS and DevOps. Seeking a challenging position to expand knowledge and contribute effectively to organizational success.</p>
-    <a href="#" class="btn">Download Resume</a>
+    <div class="hero-text">
+        <h2>Hi, I'm <span>P. Sreenath</span></h2>
+        <p>Web Developer & Back Office Executive with knowledge in Python, Java, HTML, CSS and DevOps. Passionate about learning new technologies and building efficient solutions.</p>
+        <a href="resume.pdf" class="btn">Download Resume</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="profile.jpg" alt="Sreenath Profile Photo">
+    </div>
 </section>
 
 <section id="about">
@@ -154,15 +191,13 @@ footer{
     <h2 class="section-title">Experience</h2>
     <div class="card">
         <strong>Back Office Executive</strong><br>
-        Williams Lea at HSBC<br>
-        Handled documentation, data processing and operational support tasks efficiently.
+        Williams Lea at HSBC
     </div>
 
     <div class="card">
         <strong>Web Developer Intern</strong><br>
         Viswajyoti IT Solutions<br>
-        (27 July 2023 – 28 Aug 2023)<br>
-        Worked on website development using HTML, CSS and backend basics.
+        (27 July 2023 – 28 Aug 2023)
     </div>
 </section>
 
@@ -174,7 +209,6 @@ footer{
         <span>HTML</span>
         <span>CSS</span>
         <span>DevOps</span>
-        <span>MS Office</span>
     </div>
 
     <h2 class="section-title">Soft Skills</h2>
